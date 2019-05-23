@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="manifest.css">
+<body> 
+        <img id ="placa-nome" src="api.png">
+        <p id="inicio">Web App Manifest API</strong></p>
+        <a href="FileApi.html" class="arrow arrow-left" title="Anterior"></a>
+        <a href="index.html" class="arrow arrow-right" title="Próximo"></a>
+
+        <div class="row primeira">
+                
+            <div class="panel panel-default col-sm-1 cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">
+                        <h3 class="panel-title"></h3>
+                    </div>
+
+                    <div class="collapse in" id="primeiro-paragrafo">
+                        <div class="panel-body">
+                            É um arquivo JSON simples que informa ao navegador sobre seu aplicativo da Web e como ele deve se comportar quando "instalado" no dispositivo móvel ou na área de trabalho do usuário.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default col-sm-1 cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">
+                        <h3 class="panel-title"></h3>
+                    </div>
+
+                    <div id="segundo-paragrafo" class="collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>short_name and/or name</li>
+                                <li>icons</li>
+                                <li>start_url</li>
+                                <li>background_color</li>
+                                <li>display</li>
+                                <li>orientation</li>
+                                <li>scope</li>
+                            </ul>                               
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default col-sm-1 cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">
+                        <h3 class="panel-title"></h3>
+                    </div>
+
+                    <div id="terceiro-paragrafo" class="collapse">
+                        <img id="manifest" src="manifest_example.png" alt="Exemplo de manifest">
+                    </div>
+                </div>
+
+                <div class="panel panel-default col-sm-1 cubos">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#quarto-paragrafo" data-parent="#paineis-sobre">
+                            <h3 class="panel-title"></h3>
+                        </div>
+    
+                        <div id="quarto-paragrafo" class="collapse">
+                            <div class="panel-body">
+                                    O objeto “FileReader” nos fornece propriedades, especialmente métodos para 
+                                    a leitura dos conteúdos de arquivo ou blob de forma assíncrona e eventos para 
+                                    o retorno dos resultados dessas interpretações.
+                            </div>
+                        </div>
+                    </div>
+         
+                <div class="panel panel-default col-sm-1 cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#quinto-paragrafo" data-parent="#paineis-sobre">
+                        <h3 class="panel-title"></h3>
+                    </div>
+
+                    <div class="collapse in" id="quinto-paragrafo">
+                        <div class="panel-body">
+                                Onload: ProgressEvent que ocorre quando uma operação de leitura por um objeto FileReader 
+                                é concluída com êxito;
+                                Onabort: ProgressEvent que ocorre quando uma operação de leitura é abortada chamando o
+                                método abort.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default col-sm-1 cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#sexto-paragrafo" data-parent="#paineis-sobre">
+                        <h3 class="panel-title"></h3>
+                    </div>
+
+                    <div id="sexto-paragrafo" class="collapse">
+                        <div class="panel-body">
+                                ReadAsDataURL: Lê um objeto na memória como uma string de URL de dados;
+                                Abort: Aborta uma operação de leitura do “FileReader”
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default col-sm-1 cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#setimo-paragrafo" data-parent="#paineis-sobre">
+                        <h3 class="panel-title"></h3>
+                    </div>
+
+                    <div id="setimo-paragrafo" class="collapse">
+                        <div class="panel-body">
+                                File.lastModifiedDate 
+                                A Data da última modificação do arquivo referenciado pelo objeto File.
+                                File.name 
+                                O nome do arquivo referenciado pelo objeto File.
+                                File.size  
+                                O tamanho do arquivo
+                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default col-sm-1 cubos">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#oitavo-paragrafo" data-parent="#paineis-sobre">
+                            <h3 class="panel-title"></h3>
+                        </div>
+    
+                        <div id="oitavo-paragrafo" class="collapse">
+                            <div class="panel-body">
+                                    <script>
+                                            var openFile = function(event) {
+                                              var input = event.target;
+                                          
+                                              var reader = new FileReader();
+                                              reader.onload = function(){
+                                                var dataURL = reader.result;
+                                                var output = document.getElementById('output');
+                                                output.src = dataURL;
+                                              };
+                                              reader.readAsDataURL(input.files[0]);
+                                            };
+                                          </script>
+                                          
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default col-sm-1 cubos">
+                            <div class="panel-heading" data-toggle="collapse" data-target="#nono-paragrafo" data-parent="#paineis-sobre">
+                                <h3 class="panel-title"></h3>
+                            </div>
+        
+                            <div id="nono-paragrafo" class="collapse">
+                                <div class="panel-body">
+                                        Gerar uma URL para um BLOB:
+                                        Cancelar essa URL gerada:
+
+                               </div>
+                            </div>
+                        </div>
+        
+        </div> 
+
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>

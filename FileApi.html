@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file.css">
+<body> 
+        <img id ="placa-nome" src="api.png">
+        <p id="inicio">File API</strong></p>
+        <a href="index.html" class="arrow arrow-left" title="Anterior"></a>
+        <a href="Manifest.html" class="arrow arrow-right" title="Próximo"></a>
+
+        <div class="row">
+            <div class="panel-group col-sm-6 " id="paineis-sobre">
+                 <div class="panel panel-default cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">
+                        <h3 id="tittle" class="panel-title"><strong>File API</strong> </h3>
+                    </div>
+
+                    <div class="collapse" id="primeiro-paragrafo">
+                        <div class="panel-body">
+                               <p>A interface <strong id="word">File</strong> provê informações sobre 
+                                arquivos e permite ao JavaScript acessar seu conteúdo.</p> 
+                                <img id ="code" src="input.png">
+                                <img id="code2" src="function.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">
+                        <h3 id="tittle" class="panel-title"><strong>File: Tipo Específico de Blob</strong></h3>
+                    </div>
+
+                    <div id="segundo-paragrafo" class="collapse">
+                        <div class="panel-body">
+                              <p> <strong id="word">Blob</strong>: representa uma seqüência de bytes semelhante a um arquivo e fornece 
+                                métodos e propriedades para criar ou manipular intervalos de dados binários; <br>
+                                <strong id="word">File</strong>: fornece atributos informativos (somente leitura) sobre um arquivo; <br>
+                                 Podem ser utilizados em qualquer contexto que um Blob pode; <br>
+                                 Em particular, FileReader, URL.createObjectURL(); <br>
+                                 <strong id="word">FileReader</strong>:Fornece métodos para ler de forma assíncrona um arquivo ou Blob e 
+                                 eventos para obter os resultados dessas leituras.
+                              </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default  cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">
+                        <h3 id="tittle" class="panel-title"><strong>Métodos File API</strong></h3>
+                    </div>
+
+                    <div id="terceiro-paragrafo" class="collapse">
+                        <div class="panel-body">
+                                <strong id="word">Item</strong>: Retorna um objeto “File”de um objeto “FileList”; <br>
+                                <strong id="word">ReadAsBinaryString</strong>: Lê o conteúdo de um blob ou arquivo como binário; <br>
+                                CreateObjectURL: Cria uma URL para o objeto especificado.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default cubos">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#quarto-paragrafo" data-parent="#paineis-sobre">
+                            <h3 id="tittle" class="panel-title"><strong>FileReader</strong></h3>
+                        </div>
+    
+                        <div id="quarto-paragrafo" class="collapse">
+                            <div class="panel-body">
+                                    O objeto <strong id="word">“FileReader” </strong>nos fornece propriedades, especialmente métodos para 
+                                    a leitura dos conteúdos de arquivo ou blob de forma assíncrona e eventos para 
+                                    o retorno dos resultados dessas interpretações.
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="panel-group col-sm-6 id="teste" id="paineis-sobre1">
+                <div class="panel panel-default cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#quinto-paragrafo" data-parent="#paineis-sobre1">
+                        <h3 id="tittle" class="panel-title"><strong>Eventos para Obtenção dos Resultados</strong></h3>
+                    </div>
+
+                    <div class="collapse" id="quinto-paragrafo">
+                        <div class="panel-body">
+                                <strong id="word">Onload</strong>: ProgressEvent que ocorre quando uma operação de leitura por um objeto FileReader 
+                                é concluída com êxito; <br>
+                                <strong id="word">Onabort</strong>: ProgressEvent que ocorre quando uma operação de leitura é abortada chamando o
+                                método abort.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#sexto-paragrafo" data-parent="#paineis-sobre1">
+                        <h3 id="tittle" class="panel-title"><strong>Métodos de Leitura do Objeto</strong></h3>
+                    </div>
+
+                    <div id="sexto-paragrafo" class="collapse">
+                        <div class="panel-body">
+                                <strong id="word">ReadAsDataURL</strong>: Lê um objeto na memória como uma string de URL de dados;<br>
+                                <strong id="word">Abort</strong> : Aborta uma operação de leitura do “FileReader”.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default cubos">
+                    <div class="panel-heading" data-toggle="collapse" data-target="#setimo-paragrafo" data-parent="#paineis-sobre1">
+                        <h3 id="tittle" class="panel-title"><strong>Propriedades</strong></h3>
+                    </div>
+
+                    <div id="setimo-paragrafo" class="collapse">
+                        <div class="panel-body">
+                               <strong id="word">File.lastModifiedDate</strong>: A Data da última modificação do arquivo referenciado pelo objeto File. <br>
+                               <strong id="word">File.name</strong>: O nome do arquivo referenciado pelo objeto File. <br>
+                                <strong id="word">File.size</strong> O tamanho do arquivo
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default cubos">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#oitavo-paragrafo" data-parent="#paineis-sobre1">
+                            <h3 id="tittle" class="panel-title"><strong>Ler o Conteúdo</strong></h3>
+                        </div>
+    
+                        <div id="oitavo-paragrafo" class="collapse">
+                            <div class="panel-body">
+                                <img  id="script-texto" src="script.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default cubos">
+                            <div class="panel-heading" data-toggle="collapse" data-target="#nono-paragrafo" data-parent="#paineis-sobre1">
+                                <h3 id="tittle" class="panel-title"><strong>Abrir Arquivos</strong></h3>
+                            </div>
+        
+                            <div id="nono-paragrafo" class="collapse">
+                                <div class="panel-body">
+                                        Gerar uma URL para um BLOB: 
+                                        <img  id="script-texto" src="var.png">
+                                        Cancelar essa URL gerada:
+                                        <img  id="script-texto" src="window.png">
+                               </div>
+                            </div>
+                        </div>       
+           </div>
+        </div> 
+     <img id="cal" src="caldeirao.png">
+     <img id="hp" src="hogwarts.gif">
+     <p id="exemplo"><a href="https://silveiravinicius.github.io/cefet-web-weblot-file/"> Navegar</a> </p>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

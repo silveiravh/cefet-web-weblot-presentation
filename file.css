@@ -1,0 +1,139 @@
+
+body {
+  background-image: url('inside.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 900px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+#paineis-sobre {
+  padding: 0;
+}
+
+.panel-body{
+  background: url('meio.jpg');
+}
+  
+.panel-heading {
+  background-image: url('meio.jpg');
+}
+
+.row {
+  position: relative;
+  top: 60%;
+  padding-right: 120px;
+  left:30%;
+  height:50px;
+}
+#hp {
+  height: 60%;
+  top:50%;
+  left: -4%;
+  position: fixed;
+}
+
+
+#word {
+  color:rgb(247, 25, 210);
+}
+
+#code{
+  width: 60%;
+  height: 50%;
+  margin: auto;
+  display: block;
+}
+
+#script-texto{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+
+}
+#tittle{
+  color:maroon;
+  text-align: center;
+}
+
+#teste{
+  position: fixed;
+  padding:120px;
+  
+}
+
+#code2{
+  width: 100%;
+  height: 50%;
+  margin-top: 20px;
+  display: block;
+}
+
+#exemplo{
+  height: 40%;
+  top:86%;
+  left: 86%;
+  position: fixed;
+  color:white;
+  font-size:35px;
+}
+
+#cal{
+  height: 40%;
+  top:67%;
+  left: 80%;
+  position: fixed;
+}
+
+#placa-nome{
+  top: 0px;
+  position:fixed;
+  width: 25%;
+  height: 20%;
+  left: 35%;
+  margin:0px;
+  padding: 0px;
+}
+
+#inicio{
+  position:fixed;
+  width: 25%;
+  height: 20%;
+  left: 44%;
+  margin:0px;
+  padding: 0px;
+  top:10%;
+  font-size: 30px;
+}
+
+.cubos{
+  width: 400px;
+}
+
+.arrow{
+  width: 35px;
+  height: 35px;
+  position:fixed;
+  top:50%;
+  z-index:1;
+  border-top:5px solid #fff;
+  border-right:5px solid #fff;
+  cursor:pointer;
+  transition:border-color 0.3s ease-out;
+}
+
+.arrow:hover{
+	border-color:#eb4758
+}
+
+.arrow-left{
+  left:20px;
+  transform:rotate(225deg);
+}
+
+.arrow-right{
+  right:20px;
+  transform:rotate(45deg);
+}

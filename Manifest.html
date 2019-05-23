@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="manifest.css">
+
+<body>
+    <img id="placa-nome" src="api.png">
+    <p id="inicio">Manifest</strong></p>
+    <a href="index.html" class="arrow arrow-left" title="Anterior"></a>
+    <a href="Manifest.html" class="arrow arrow-right" title="Próximo"></a>
+
+    <div class="row">
+        <div class="panel-group col-sm-6 " id="paineis-sobre">
+            <div class="panel panel-default cubos">
+                <div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo"
+                    data-parent="#paineis-sobre">
+                    <h3 id="tittle" class="panel-title"><strong>Web Manifest API</strong> </h3>
+                </div>
+
+                <div class="collapse" id="primeiro-paragrafo">
+                    <div class="panel-body">
+                        É um arquivo JSON simples que informa ao navegador sobre seu aplicativo da Web e como ele deve
+                        se comportar quando "instalado" no dispositivo móvel ou na área de trabalho do usuário.
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default cubos">
+                <div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo"
+                    data-parent="#paineis-sobre">
+                    <h3 id="tittle" class="panel-title"><strong>Propriedades</strong></h3>
+                </div>
+
+                <div id="segundo-paragrafo" class="collapse">
+                    <div class="panel-body">
+                        <ul>
+                            <li>short_name and/or name</li>
+                            <li>icons</li>
+                            <li>start_url</li>
+                            <li>background_color</li>
+                            <li>display</li>
+                            <li>orientation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default  cubos">
+                <div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo"
+                    data-parent="#paineis-sobre">
+                    <h3 id="tittle" class="panel-title"><strong>Exemplo de manifest</strong></h3>
+                </div>
+
+                <div id="terceiro-paragrafo" class="collapse">
+                    <div class="panel-body">
+                        <img id="manifest" src="manifest_example.png" alt="Exemplo de manifest">
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default cubos">
+                <div class="panel-heading" data-toggle="collapse" data-target="#quarto-paragrafo"
+                    data-parent="#paineis-sobre">
+                    <h3 id="tittle" class="panel-title"><strong>Telas Iniciais</strong></h3>
+                </div>
+
+                <div id="quarto-paragrafo" class="collapse">
+                    <div class="panel-body">
+                        <p>Quando seu aplicativo é lançado pela primeira vez, pode demorar um pouco para o navegador
+                            acelerar e o conteúdo inicial começar a renderizar. o Chrome mostrará uma tela inicial, até
+                            a primeira tela</p>
+                        <p>O Chrome criará automaticamente a tela inicial a partir das propriedades do manifesto,
+                            incluindo:</p>
+                        <ul>
+                            <li>nome, cor de fundo, ícones</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-group col-sm-6 id=" teste" id="paineis-sobre1">
+            <div class="panel panel-default cubos">
+                <div class="panel-heading" data-toggle="collapse" data-target="#quinto-paragrafo"
+                    data-parent="#paineis-sobre1">
+                    <h3 id="tittle" class="panel-title"><strong>Testar o Manifest</strong></h3>
+                </div>
+
+                <div class="collapse" id="quinto-paragrafo">
+                    <div class="panel-body">
+                        <p>Para verificar manualmente se o seu manifesto está configurado corretamente, você pode usar a guia "Manifest" no painel "Aplicativo" do Chrome DevTools.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img id="cal" src="caldeirao.png">
+    <img id="hp" src="hogwarts.gif">
+    <p id="exemplo"><a href="https://silveiravinicius.github.io/cefet-web-weblot-web-app-manifest/"> Navegar</a> </p>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
