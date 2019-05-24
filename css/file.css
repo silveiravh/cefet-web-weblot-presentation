@@ -1,6 +1,6 @@
 
 body {
-  background-image: url('inside.jpg');
+  background-image: url('../images/inside.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 900px;
@@ -14,11 +14,11 @@ body {
 }
 
 .panel-body{
-  background: url('meio.jpg');
+  background: url('../images/meio.jpg');
 }
   
 .panel-heading {
-  background-image: url('meio.jpg');
+  background-image: url('../images/meio.jpg');
 }
 
 .row {

@@ -1,6 +1,6 @@
 
 body {
-    background-image: url('hp.jpg');
+    background-image: url('../images/hp.jpg');
     background-repeat: no-repeat;
   background-size: cover;
   width: 1224px;
